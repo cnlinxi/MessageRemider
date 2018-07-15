@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:textSize="20dp"
+    android:text="邮箱设置"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送方邮箱主机:"
+        android:layout_marginTop="10dp"/>
+    <EditText android:id="@+id/etSendMailHost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="例如:smtp.163.com"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送方邮箱账号:"
+        android:layout_marginTop="10dp"/>
+    <EditText android:id="@+id/etSendAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="例如:tongyexiansheng@163.com"
+        android:inputType="textEmailAddress"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView android:id="@+id/tvPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送方邮箱密码:"
+        android:layout_marginTop="10dp"/>
+    <EditText android:id="@+id/etSendPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textVisiblePassword" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="接收方邮箱账号:"
+        android:layout_marginTop="10dp"/>
+    <EditText android:id="@+id/etReceiveAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="例如:cncmn@sina.cn"
+        android:inputType="textEmailAddress"/>
+</LinearLayout>
+
+<Button android:id="@+id/btnSaveConfig"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:text="@string/btn_save_config"/>
+</LinearLayout>
